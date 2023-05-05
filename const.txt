@@ -1,0 +1,16 @@
+using System;
+public class stat
+{
+    const string name="sandeep";
+    int roll;
+    string add;
+    static void Main(string[] args){
+        // stat.s="sandeep";
+        stat obj=new stat();
+        obj.roll=57;
+        obj.add="delhi";
+        Console.WriteLine($"my name is {name} , i live in {obj.add} and my roll number is {obj.roll} "  );
+        
+
+    }
+}

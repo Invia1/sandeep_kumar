@@ -1,0 +1,29 @@
+using System;
+class assignment
+{
+    public void palindrome()
+    {
+        Console.WriteLine("enter desire string");
+        string str = Console.ReadLine();
+        string rev_string = "";
+        for (int i = 0; i < str.Length; i++)
+        {
+            rev_string = str[i] + rev_string;
+        }
+        if (rev_string == str)
+        {
+            Console.WriteLine(str + " this string is palindrome");
+        }
+        else
+        {
+            Console.WriteLine(str + " this string is not palindrome");
+        }
+
+
+    }
+    public static void Main()
+    {
+     assignment obj= new assignment();
+     obj.palindrome();
+    }
+}

@@ -1,0 +1,30 @@
+using System;
+class assign
+{
+    static int Fibonacci(int n)
+    {
+        if (n == 0)
+        {
+            return 0;
+        }
+        else if (n == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return Fibonacci(n - 1) + Fibonacci(n - 2);
+        }
+    }
+    static void Main(string[] args)
+    {
+        Console.Write("enter length of the Fibonacci Series: ");
+        int num = Convert.ToInt32(Console.ReadLine());
+        for (int i = 0; i < num; i++)
+        {
+            Console.WriteLine(Fibonacci(i));
+        }
+        Console.ReadKey();
+    }
+
+}
