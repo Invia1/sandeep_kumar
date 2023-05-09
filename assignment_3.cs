@@ -19,7 +19,7 @@ class Bank
         set
         {
             Name = value;
-            //obj2.nme();
+       
         }
     }
 
